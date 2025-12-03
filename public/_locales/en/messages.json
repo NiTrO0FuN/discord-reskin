@@ -1,0 +1,17 @@
+{
+    "extName": {
+        "message": "ReSkin for Discord"
+    },
+    "extDescription": {
+        "message": "Browser extension to apply customized Discord themes."
+    },
+    "avatarStyle": {
+        "message": "Avatar style:"
+    },
+    "backgroundImage": {
+        "message": "Background image:"
+    },
+    "backgroundImageLink": {
+        "message": "Image link"
+    }
+}

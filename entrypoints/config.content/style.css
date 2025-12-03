@@ -1,0 +1,160 @@
+.customBackground {
+    div[class*="baseLayer__"] > div[class^="container__"] {
+        background-image: var(--custom-background);
+        background-size: cover;
+
+        --channels-default: gainsboro;
+
+        [class^="bar_"] {
+            background-color: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+        }
+
+        /* Sidebar */
+        div[class^="sidebar__"] {
+            &::after {
+                background-color: unset;
+            }
+
+            > nav[class^="wrapper_"] {
+                background-color: rgba(0, 0, 0, 0.5);
+            }
+
+            > [class^="sidebarList__"] {
+                backdrop-filter: blur(5px);
+                border-color: rgba(0, 0, 0, 0.6);
+                border-start-start-radius: 0;
+                > nav {
+                    background-color: rgba(0, 0, 0, 0.5);
+                    [data-list-id^="private-channels-"] {
+                        background: unset;
+                    }
+                }
+            }
+
+            section[class^="panels__"] {
+                background: unset;
+                backdrop-filter: blur(10px);
+            }
+        }
+
+        /* Server center content*/
+        div[class^="chat_"] {
+            background: unset;
+            border-color: rgba(0, 0, 0, 0.6);
+
+            section[class^="title_"] {
+                background: rgba(0, 0, 0, 0.6);
+
+                [class^="upperContainer__"] > :first-child:after {
+                    background: unset;
+                }
+
+                [class^="search__"] {
+                    backdrop-filter: blur(10px);
+                }
+            }
+
+            main[class^="chatContent_"] {
+                background: rgba(0, 0, 0, 0.5);
+
+                /* Loading skeleton */
+                ol[class^="scrollerInner__"] div[class^="wrapper"] {
+                    background: unset;
+                }
+
+                [class^="chatTypingGradientAtBottom__"],
+                [class^="chatGradient__"] {
+                    background: unset;
+                }
+
+                li[class^="messageListItem"]:hover {
+                    backdrop-filter: blur(5px);
+                    background-color: rgba(0, 0, 0, 0.1);
+                }
+
+                [class^="channelTextArea_"] {
+                    background: rgba(0, 0, 0, 0.5);
+                    > [class^="scrollableContainer__"] {
+                        backdrop-filter: blur(10px);
+                        background: unset;
+                    }
+                }
+            }
+
+            [class^="container_"]:has(aside[class^="membersWrap"]) {
+                backdrop-filter: blur(5px);
+                background-color: rgba(50, 50, 50, 0.5);
+                [class^="members_"] {
+                    background: unset;
+                }
+
+                [class^="container__"] {
+                    background-color: rgba(0, 0, 0, 0.5);
+                }
+
+                [class^="member__"] {
+                    background: unset;
+                }
+            }
+
+            /* Members page */
+            &[class*="page_"] {
+                background: unset !important;
+                backdrop-filter: blur(10px);
+
+                section[class^="header_"] {
+                    background-color: rgba(0, 0, 0, 0.5);
+                    border-color: rgba(0, 0, 0, 0.2);
+
+                    > [class^="upperContainer__"] > [class^="children__"]:after {
+                        background: unset;
+                    }
+                }
+
+                [class^="mainTableContainer__"] {
+                    background-color: rgba(0, 0, 0, 0.5);
+                }
+            }
+
+            /* Channel search */
+            > section[class^="header__"],
+            > [class^="content_"][class*="container"] {
+                background-color: rgba(0, 0, 0, 0.6) !important;
+                [class^="pageBody__"] {
+                    background: unset;
+                }
+            }
+
+            div[class^="channelRow_"]:hover:not([class^="disabled"]) {
+                background-color: rgb(25, 25, 25);
+            }
+        }
+
+        /* Private space */
+        /* Friend list */
+        [class^="page__"] > main[class^="container__"] {
+            background: unset;
+            border-color: rgba(0, 0, 0, 0.5);
+
+            > section,
+            > [class^="tabBody__"] {
+                background-color: rgba(0, 0, 0, 0.6);
+            }
+            div[class^="nowPlayingColumn__"] {
+                background: unset;
+                > aside {
+                    backdrop-filter: blur(5px);
+                    background-color: rgba(0,0,0, 0.5);
+                }
+            }
+        }
+    }
+
+    /* Modal */
+    [class^="focusLock__"] > [class^="root__"],
+    [data-mana-component="modal"] {
+        background: unset;
+        backdrop-filter: blur(10px);
+    }
+}

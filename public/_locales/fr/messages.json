@@ -1,0 +1,17 @@
+{
+    "extName": {
+        "message": "ReSkin pour Discord"
+    },
+    "extDescription": {
+        "message": "Extension pour appliquer des thèmes personalisés sur Discord navigateur."
+    },
+    "avatarStyle": {
+        "message": "Style de l'avatar:"
+    },
+    "backgroundImage": {
+        "message": "Image d'arrière plan:"
+    },
+    "backgroundImageLink": {
+        "message": "Lien de l'image"
+    }
+}
