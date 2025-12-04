@@ -16,7 +16,12 @@ export default defineConfig({
             browser == "firefox"
                 ? {
                       browser_specific_settings: {
-                          data_collection_permissions: "none",
+                          gecko: {
+                              data_collection_permissions: {
+                                  required: ["none"],
+                              },
+                              id: "discordreskin@nitrofun.eu",
+                          },
                       },
                   }
                 : {};
