@@ -39,7 +39,7 @@ jobs:
               id: version
               run: |
                   npx changelogen@latest --bump
-                  NEW_VERSION=$(node -e "console.log(require("./package.json").version)")
+                  NEW_VERSION=$(node -e 'console.log(require("./package.json").version)')
                   echo "newVersion=$NEW_VERSION" >> "$GITHUB_OUTPUT"
 
             - name: Build and Zip
