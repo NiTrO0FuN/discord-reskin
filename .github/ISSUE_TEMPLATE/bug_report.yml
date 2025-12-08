@@ -1,0 +1,91 @@
+name: "Bug Report"
+description: "Report a bug found in ReSkin for discord"
+title: "[Bug] <title>"
+labels: ["bug"]
+assignees:
+    - NiTrO0FuN
+
+body:
+    - type: markdown
+      attributes:
+          value: |
+              Thanks for taking the time to report a bug!  
+
+              > [!NOTE]
+              > Please search to see if an issue already exists for the bug you encountered.
+
+              Please fill out the sections below as accurately as possible.
+
+    - type: textarea
+      id: bug-description
+      attributes:
+          label: Describe the bug
+          description: A clear and concise description of what the bug is.
+          placeholder: "When I open a new tab, the extension crashes..."
+      validations:
+          required: true
+
+    - type: textarea
+      id: steps-to-reproduce
+      attributes:
+          label: To Reproduce
+          description: Steps to reproduce the behavior.
+          placeholder: |
+              1. Go to '...'
+              2. Click on '...'
+              3. Scroll down to '...'
+              4. See error
+      validations:
+          required: true
+
+    - type: textarea
+      id: expected-behavior
+      attributes:
+          label: Expected behavior
+          description: A clear and concise description of what you expected to happen.
+          placeholder: "I expected the browser to..."
+      validations:
+          required: false
+
+    - type: textarea
+      id: screenshots
+      attributes:
+          label: Screenshots
+          description: Upload screenshots or videos if applicable.
+      validations:
+          required: false
+
+    - type: input
+      id: os
+      attributes:
+          label: OS
+          description: Operating system you are using.
+          placeholder: "e.g. macOS 14, Windows 11, Ubuntu 22.04"
+      validations:
+          required: true
+
+    - type: input
+      id: browser
+      attributes:
+          label: Browser
+          description: The browser you are using.
+          placeholder: "e.g. Chrome 130, Safari 18, Firefox 131"
+      validations:
+          required: true
+
+    - type: input
+      id: extension-version
+      attributes:
+          label: Extension version
+          description: The version number of the extension.
+          placeholder: "e.g. 1.0.1"
+      validations:
+          required: true
+
+    - type: textarea
+      id: additional-context
+      attributes:
+          label: Additional context
+          description: Add any other context or information about the problem here.
+      validations:
+          required: false
