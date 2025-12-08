@@ -40,7 +40,7 @@ export default defineConfig({
         };
     },
     autoIcons: {
-        baseIconPath: "assets/icon.svg",
+        baseIconPath: "assets/icon.png",
         developmentIndicator: "overlay",
     },
 });
