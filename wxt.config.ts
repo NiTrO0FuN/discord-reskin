@@ -35,7 +35,7 @@ export default defineConfig({
                     matches: ["*://discord.com/*"],
                 },
             ],
-            permissions: ["storage"],
+            permissions: ["storage", "tabs"],
             ...firefox,
         };
     },
