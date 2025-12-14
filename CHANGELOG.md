@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.0.3
+
+[compare changes](https://github.com/NiTrO0FuN/discord-reskin/compare/v1.0.2...v1.0.3)
+
+### 🩹 Fixes
+
+- Add legacy permission ([08be600](https://github.com/NiTrO0FuN/discord-reskin/commit/08be600))
+
+### ❤️ Contributors
+
+- NiTrO0FuN ([@NiTrO0FuN](https://github.com/NiTrO0FuN))
+
 ## v1.0.2
 
 [compare changes](https://github.com/NiTrO0FuN/discord-reskin/compare/v1.0.1...v1.0.2)
