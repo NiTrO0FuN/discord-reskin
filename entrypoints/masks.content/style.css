@@ -1,4 +1,4 @@
-[class*="avatar_"],
+img[class*="avatar_"],
 [class*="voiceAvatar"],
 div[class^="avatar"] [class^="circularImage"],
 div[class^="avatarStack__"]:after {
